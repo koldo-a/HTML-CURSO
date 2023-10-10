@@ -1,0 +1,100 @@
+.form {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+
+    & fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 1000px;
+        text-align: center;
+        background-color: black;
+        color: var(--color-especial);
+        border: 1px solid;
+        border-radius: 3px;
+        opacity: 0.95;
+        
+        & .x {
+            position: relative;
+            top: 0;
+            right: 0;
+            font-size: 24px;
+            color: var(--color-especial);
+            cursor: pointer;
+        }
+        
+        & div {
+            display: flex;
+            align-items: center;
+        }
+
+        & .campos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 90%;
+            margin: 10px;
+        }
+
+
+        & input {
+            all:unset;
+            background-color: rgb(213, 231, 247);
+            color: black;
+            margin: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            padding: 5px;
+            border: 2px solid rgb(213, 231, 247);
+
+            
+            &:hover {
+                border: 2px solid var(--color-especial);
+                background-color: rgb(73, 202, 116);
+                cursor: pointer;
+            }
+
+            &:focus {
+                background-color: rgb(56, 153, 88);
+            }
+        }
+
+        & label {
+            font-weight: 500;
+            transition: 0.9s;
+
+            &:hover {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        }
+        & #boton {
+            width: 150px;
+            height: 2em;
+            margin-top: 20px;
+            background-color: var(--color-especial);
+            color: rgb(0, 0, 0);
+            transition: 0.9s;
+            border: none;
+
+
+            &:hover {
+                background-color: rgb(118, 118, 161);
+                cursor: pointer;
+                color: rgb(29, 28, 28);
+                border: 0px;
+                letter-spacing: 0.3em;
+
+            }
+        }
+
+    }
+}

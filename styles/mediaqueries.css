@@ -1,0 +1,52 @@
+@media screen and (max-width: 500px) {
+    
+    .cuadros p {
+        font-size: 70%;
+    }
+    
+    pre {
+        font-size: 80%;
+    }
+
+    .form {
+        width: 100%;
+        font-size: 90%;
+
+        & fieldset {
+            display: flex;
+            align-items: center;
+
+            & input {
+            font-size: 80%;
+            opacity: 0.;
+            }
+
+            & label {
+                font-weight: 50%;
+            }
+
+            & #boton {
+                min-width: 100px;
+                height: 4em;
+            }
+
+        }
+    }
+
+    .parrafo {
+        padding: 10px;
+        margin: -1px;
+        background-color: rgb(20, 4, 36);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        &:hover {
+            color: rgb(1, 12, 3);
+            cursor: pointer;
+            background-color: rgb(2, 255, 15);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & div {
+        align-items: center;
+    }
+}
