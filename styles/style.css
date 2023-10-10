@@ -1,26 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    color: rgb(208, 255, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
-    background-color: rgb(0, 19, 5);
+    background-color: var(--color-fondo);
+    margin: 0;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 140px;
+    font-weight: 900;
     margin: 0;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
 }
 
 h2, h3 {
     margin: 0;
     padding: 20px 0;
-    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-family: var(--main-font);
+    font-weight: 100;
+    text-align: center;
 }   
 
 div {
     display: flex;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
 }
 
 p {
@@ -31,16 +43,17 @@ p {
 }
 
 pre {
+    overflow: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(0, 255, 34);
-    color: rgb(0, 255, 34);
+    border: 1px solid var(--color-especial);
+    color: var(--color-especial);
     border-radius: 10px;
     background-color: black;
-    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 5%;
 
     &:hover {
         color: rgb(95, 2, 2);
@@ -50,7 +63,7 @@ pre {
 }
 
 .seccion1 {
-    margin-top: 50px;
+    margin-top: 250px;
     position: relative;
     top: 0;
     right: 0;
@@ -58,7 +71,31 @@ pre {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
     z-index: 1;
 }
 
+
+
+
+/* Define la animación */
+@keyframes typing {
+    from { width: 0 }
+  }
+  
+  /* Aplica la animación al elemento */
+  h1 {
+    overflow: hidden;
+    animation: typing 5s steps(40, end);
+  }
+  
+  /* Define el contenido del elemento */
+  h1::after {
+    content: "|";
+    animation: blink 0.5s infinite;
+  }
+  
+  /* Define la animación del cursor */
+  @keyframes blink {
+    to { opacity: 0 }
+  }
+  

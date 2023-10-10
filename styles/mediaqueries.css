@@ -16,6 +16,17 @@
             display: flex;
             align-items: center;
 
+            & .x {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin-top: 20px;
+                margin-right: 10px;
+                font-size: 24px;
+                color: var(--color-especial);
+                cursor: pointer;
+            }
+
             & input {
             font-size: 80%;
             opacity: 0.;
@@ -46,7 +57,7 @@
         &:hover {
             color: rgb(1, 12, 3);
             cursor: pointer;
-            background-color: rgb(2, 255, 15);
+            background-color: var(--color-especial);
         }
     }
 }
