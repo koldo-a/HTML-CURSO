@@ -1,15 +1,29 @@
+@media screen and (max-width: 854px) {
+    .cuadro {
+        min-width: 150px;
+        font-size: 80%;
+    }
+}
+
 @media screen and (max-width: 500px) {
-    
+    .cuadros {
+        grid-template-columns: 1fr 1fr;
+    }
     .cuadros p {
-        font-size: 70%;
+        font-size: 1em;
     }
     
     pre {
-        font-size: 80%;
+        overflow: hidden;
+        width: 90%;
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .form {
-        width: 100%;
+        width: 95%;
         font-size: 90%;
 
         & fieldset {
@@ -17,14 +31,7 @@
             align-items: center;
 
             & .x {
-                position: absolute;
-                top: 0;
-                right: 0;
-                margin-top: 20px;
-                margin-right: 10px;
-                font-size: 24px;
-                color: var(--color-especial);
-                cursor: pointer;
+                display: none;
             }
 
             & input {
@@ -54,10 +61,36 @@
         justify-content: center;
         text-align: center;
         z-index: 1;
+
         &:hover {
             color: rgb(1, 12, 3);
             cursor: pointer;
             background-color: var(--color-especial);
         }
+
+    .cuadro {
+        display: flex;
+        }
     }
+    
+    .menu {
+        display: none;
+    }
+
+    .burguer {
+        display: flex;
+        z-index: 8;
+
+        & ul li {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cuadros {
+        grid-template-columns: 1fr;
+    }
+
 }

@@ -15,27 +15,61 @@ a {
 ul {
     list-style: none;
     padding-inline-start: 0px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+    width: 100%;
 }
 
 li {
     list-style: none;
+    text-align: center;
 }
 
 .menu {
+    display: flex;
     position: fixed;
     padding: 0;
     margin: 0;
     top: 0;
     left: 0;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    height: 3em;
+    font-family: var(--main-font);
     font-weight: 500;
     background-color: black;
     z-index: 2;
-    box-shadow: 1px 1px 10px 1px rgb(36, 36, 36);
+    border-bottom: var(--border-simple);
 }
 
+.burguer {
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 85%;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+    font-size: 36px;
+    color: var(--color-especial);
+    cursor: pointer;
+    z-index: 3;
 
+    & ul {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: black;
+        border: var(--border-simple);
+            
+            & li {
+                padding: 20px;
+            }
+    }
+
+    & svg {
+        fill: var(--color-especial);
+    }
+}

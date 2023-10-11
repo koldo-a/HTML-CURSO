@@ -5,81 +5,83 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    z-index: 2;
+    z-index: 7;
 
     & fieldset {
+        padding-right: 20px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        max-width: 1000px;
-        text-align: center;
         background-color: black;
         color: var(--color-especial);
         border: 1px solid;
         border-radius: 3px;
         opacity: 0.95;
+        margin-right: 20px;
         
         & .x {
-            position: relative;
-            top: 0;
-            right: 0;
-            font-size: 24px;
-            color: var(--color-especial);
-            cursor: pointer;
+        font-size: 24px;
+        color: var(--color-especial);
+        cursor: pointer;
+        margin-right: -10px;
+        }
+
+        &
+        svg {
+            fill: var(--color-especial);
         }
         
-        & div {
+        &
+        div {
             display: flex;
-            align-items: center;
+        align-items: center;
         }
 
         & .campos {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            width: 90%;
-            margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 90%;
         }
 
-
-        & input {
+        &
+        input {
             all:unset;
-            background-color: rgb(213, 231, 247);
-            color: black;
-            margin: 10px;
-            width: 100%;
-            border-radius: 5px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            padding: 5px;
-            border: 2px solid rgb(213, 231, 247);
+        background-color: rgb(213, 231, 247);
+        color: black;
+        margin: 10px;
+        width: 100%;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 5px;
+        border: 2px solid rgb(213, 231, 247);
 
             
-            &:hover {
+            &:
+        hover {
                 border: 2px solid var(--color-especial);
-                background-color: rgb(73, 202, 116);
-                cursor: pointer;
+        background-color: rgb(73, 202, 116);
+        cursor: pointer;
             }
 
-            &:focus {
+            &:
+        focus {
                 background-color: rgb(56, 153, 88);
             }
         }
 
-        & label {
+        &
+        label {
             font-weight: 500;
-            transition: 0.9s;
-
-            &:hover {
-                letter-spacing: 0.2em;
-            }
+        }
         }
 
-        }
         & #boton {
+            position: inherit;
+            justify-content: center;
             width: 150px;
             height: 2em;
-            margin-top: 20px;
             background-color: var(--color-especial);
             color: rgb(0, 0, 0);
             transition: 0.9s;
@@ -96,5 +98,18 @@
             }
         }
 
+    .loginsign{
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        fill: var(--color-especial);
+        margin:20px;
+        color: var(--color-especial);
+        z-index: 6;
     }
-}
+
+    & svg {
+        padding-left: 7px;
+    }
+
+    }

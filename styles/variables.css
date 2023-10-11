@@ -3,4 +3,5 @@
     --color-fondo: #000;
     --color-texto: #fff;
     --main-font: 'Poppins', sans-serif;
+    --border-simple: 1px solid var(--color-especial);
 }

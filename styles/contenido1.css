@@ -1,35 +1,27 @@
-.cuadros-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .cuadros {
-    max-width: 80%;
-    display: flex;
-    flex-direction: row;   
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
-    row-gap: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     border: 0px solid white;
-    width: 100%;
-    margin-bottom: 5px;
+
 }
 
 .cuadro {
     border: 1px solid white;
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 1;
-    width: 100%;
+    max-width: 250px;
+
+
     &:hover {
         color: var(--color-especial);
         cursor: pointer;

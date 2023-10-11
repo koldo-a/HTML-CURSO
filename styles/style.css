@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
     background-color: var(--color-fondo);
@@ -62,40 +63,30 @@ pre {
     }
 }
 
-.seccion1 {
-    margin-top: 250px;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
+.banner-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
+    height: 100vh;
 }
 
+.banner {
+font-size: 11em;
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 12ch;
+z-index: 5;
 
+animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+overflow:hidden;
+}
 
+@keyFrames typing {
 
-/* Define la animación */
-@keyframes typing {
-    from { width: 0 }
-  }
-  
-  /* Aplica la animación al elemento */
-  h1 {
-    overflow: hidden;
-    animation: typing 5s steps(40, end);
-  }
-  
-  /* Define el contenido del elemento */
-  h1::after {
-    content: "|";
-    animation: blink 0.5s infinite;
-  }
-  
-  /* Define la animación del cursor */
-  @keyframes blink {
-    to { opacity: 0 }
-  }
-  
+from { width: 0}
+}
+
+@keyFrames blink {
+    50% { border-color: transparent}
+}
