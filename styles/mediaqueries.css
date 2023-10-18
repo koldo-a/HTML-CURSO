@@ -12,7 +12,9 @@
     .cuadros p {
         font-size: 1em;
     }
-    
+    .banner {
+        width: 100vh;
+    }
     pre {
         overflow: hidden;
         width: 90%;

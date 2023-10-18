@@ -65,28 +65,30 @@ pre {
 
 .banner-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .banner {
-font-size: 11em;
-display: block;
-font-family: monospace;
-white-space: nowrap;
-border-right: 4px solid;
-width: 12ch;
-z-index: 5;
+    font-size: 8.5rem;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    z-index: 5;
 
-animation: typing 2s steps(12), blink .5s infinite step-end alternate;
-overflow:hidden;
-}
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
 
-@keyFrames typing {
+    @keyFrames typing {
 
-from { width: 0}
-}
+    from { width: 0}
+    }
 
-@keyFrames blink {
-    50% { border-color: transparent}
-}
+    @keyFrames blink {
+        50% { border-color: transparent}
+    }
